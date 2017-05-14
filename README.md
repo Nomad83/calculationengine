@@ -11,9 +11,9 @@ make
 make clean
 
 # To run the program:
-CalculationEngine <engine_type> <file_list>
+./calc <engine_type> <file_list>
 
-CalculationEngine <engine_type> <integer_list>
+./calc <engine_type> <integer_list>
 
 # Sample input files:
 input.txt

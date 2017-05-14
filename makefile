@@ -38,7 +38,7 @@ LIB_RELEASE = $(LIB)
 LDFLAGS_RELEASE = $(LDFLAGS) -s
 OBJDIR_RELEASE = obj/Release
 DEP_RELEASE = 
-OUT_RELEASE = bin/Release/CalculationEngine
+OUT_RELEASE = calc
 
 OBJ_DEBUG = $(OBJDIR_DEBUG)/src/CalculatorAPI.o $(OBJDIR_DEBUG)/src/DividerEngine.o $(OBJDIR_DEBUG)/src/Engine.o $(OBJDIR_DEBUG)/src/EngineFactory.o $(OBJDIR_DEBUG)/src/MultiplierEngine.o $(OBJDIR_DEBUG)/src/main.o
 
