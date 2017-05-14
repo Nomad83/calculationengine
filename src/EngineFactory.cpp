@@ -4,7 +4,7 @@
 
 Engine* EngineFactory::generateEngine(string calc, string input)
 {
-    Engine *pEngine;
+    Engine *pEngine = 0;
 
     if (calc.compare("multiplier") == 0)
     {
