@@ -1,7 +1,11 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
+#include <string>
+#include <list>
 #include "Enumerations.h"
+
+using namespace std;
 
 class Engine
 {
@@ -13,14 +17,20 @@ class Engine
         void SetCalcType(tenCalcType val) { m_enCalcType = val; }
         tenInputType GetInputType() { return m_enInputType; }
         void SetInputType(tenInputType val) { m_enInputType = val; }
+        void SetInputType(string val);
+        list<int>* getListIntegers() { return &m_list; }
 
         virtual int calculate() = 0;
 
-    protected:
+        void populate(string filename);
+        void populate(list<int> *arr);
 
-    private:
+    protected:
         tenCalcType m_enCalcType;
         tenInputType m_enInputType;
+
+    private:
+        list<int> m_list;
 };
 
 #endif // ENGINE_H

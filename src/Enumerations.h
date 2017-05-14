@@ -3,12 +3,14 @@
 
 enum CalcType_t{
     multiplier,
-    divider
+    divider,
+    invalidCalc
 } ;
 
 enum InputType_t{
     fileInput,
-    manualInput
+    manualInput,
+    invalidInput
 } ;
 
 typedef enum CalcType_t tenCalcType;

@@ -4,7 +4,7 @@
 #include <string>
 #include "Engine.h"
 
-using std::string;
+using namespace std;
 
 class EngineFactory
 {
