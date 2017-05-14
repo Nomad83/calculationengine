@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1494755119 source:/home/ubuntu/Documents/CalculationEngine/main.cpp
+	<iostream>
+
+1494765276 source:/home/ubuntu/Documents/CalculationEngine/Engine.cpp
+	"Engine.h"
+
+1494769566 /home/ubuntu/Documents/CalculationEngine/Engine.h
+	"Enumerations.h"
+
+1494769819 source:/home/ubuntu/Documents/CalculationEngine/EngineFactory.cpp
+	"EngineFactory.h"
+
+1494769827 /home/ubuntu/Documents/CalculationEngine/EngineFactory.h
+	<string>
+	"Engine.h"
+
+1494766636 /home/ubuntu/Documents/CalculationEngine/Enumerations.h
+
+1494769933 source:/home/ubuntu/Documents/CalculationEngine/DividerEngine.cpp
+	"DividerEngine.h"
+
+1494769658 /home/ubuntu/Documents/CalculationEngine/DividerEngine.h
+	"Engine.h"
+
+1494769918 source:/home/ubuntu/Documents/CalculationEngine/MultiplierEngine.cpp
+	"MultiplierEngine.h"
+
+1494769667 /home/ubuntu/Documents/CalculationEngine/MultiplierEngine.h
+	"Engine.h"
+
