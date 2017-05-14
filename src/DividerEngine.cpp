@@ -20,11 +20,13 @@ int DividerEngine::calculate()
     int result = pList->front();
 
     list<int>::iterator iter = pList->begin();
+    ++iter;
 
     while (iter!=pList->end())
     {
+        int val = *iter;
+        result /= val;
         ++iter;
-        result /= *iter;
     }
 
     return result;

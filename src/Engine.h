@@ -22,7 +22,7 @@ class Engine
 
         virtual int calculate() = 0;
 
-        void populate(string filename);
+        void populate(list<string> *filenames);
         void populate(list<int> *arr);
 
     protected:

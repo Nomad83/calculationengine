@@ -9,8 +9,8 @@ using namespace std;
 class CalculatorAPI
 {
     public:
-        static int multipyAll(string filename);
-        static int divideAll(string filename);
+        static int multipyAll(list<string> *filenames);
+        static int divideAll(list<string> *filenames);
         static int divideAll(list<int> *arr);
 
     protected:

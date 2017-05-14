@@ -27,21 +27,30 @@ void Engine::SetInputType(string val)
     }
 }
 
-void Engine::populate(string filename)
+void Engine::populate(list<string> *filenames)
 {
     if (m_enInputType != fileInput)
         return;
 
-    ifstream ifile;
-    string filestr = filename + ".txt";
-    ifile.open(filestr.c_str());
+    list<string>::iterator iter;
 
-    int i;
-
-    while (ifile >> i)
+    for (iter=filenames->begin(); iter!=filenames->end(); ++iter)
     {
-        m_list.push_back(i);
+        string filename = *iter;
+        string filestr = filename + ".txt";
+
+        ifstream ifile;
+        ifile.open(filestr.c_str());
+
+        int i;
+
+        while (ifile >> i)
+        {
+            m_list.push_back(i);
+        }
     }
+
+
 }
 
 void Engine::populate(list<int> *arr)
@@ -53,6 +62,7 @@ void Engine::populate(list<int> *arr)
 
     for (iter=arr->begin(); iter!=arr->end(); ++iter)
     {
-        m_list.push_back(*iter);
+        int val = *iter;
+        m_list.push_back(val);
     }
 }

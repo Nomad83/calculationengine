@@ -1,11 +1,11 @@
 #include "CalculatorAPI.h"
 #include "EngineFactory.h"
 
-int CalculatorAPI::multipyAll(string filename)
+int CalculatorAPI::multipyAll(list<string> *filenames)
 {
-    Engine *pEngine = EngineFactory::generateEngine("multipler", "file");
+    Engine *pEngine = EngineFactory::generateEngine("multiplier", "file");
 
-    pEngine->populate(filename);
+    pEngine->populate(filenames);
 
     int result = pEngine->calculate();
 
@@ -14,11 +14,11 @@ int CalculatorAPI::multipyAll(string filename)
     return result;
 }
 
-int CalculatorAPI::divideAll(string filename)
+int CalculatorAPI::divideAll(list<string> *filenames)
 {
     Engine *pEngine = EngineFactory::generateEngine("divider", "file");
 
-    pEngine->populate(filename);
+    pEngine->populate(filenames);
 
     int result = pEngine->calculate();
 
